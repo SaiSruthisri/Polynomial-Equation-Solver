@@ -1,0 +1,30 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaiSruthisri/Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SaiSruthisri/Web/issues"
+  },
+  "homepage": "https://github.com/SaiSruthisri/Web#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.2.3",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "mathjs": "^14.8.1",
+    "mongoose": "^9.3.0"
+  }
+}

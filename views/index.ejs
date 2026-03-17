@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polynomial Solver</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <h1>Polynomial Solver</h1>
+    <form id="solveForm" action="/solve" method="POST">
+      <label>Enter polynomial expression:</label>
+      <div class="expressionRow">
+        <input id="expression" type="text" name="expression" placeholder="e.g. x^2 + 3*y" required>
+        <button id="detectButton" type="button" class="secondaryButton">Detect Variables</button>
+      </div>
+
+      <label>Enter values:</label>
+      <div id="variableFields">
+        <p id="variableHelp">Detected variables will appear here.</p>
+      </div>
+      <button id="solveButton" type="submit">Solve</button>
+    </form>
+
+    <section id="resultCard" aria-live="polite">
+      <h2>Output</h2>
+      <p id="statusText">Enter an expression and click Solve.</p>
+      <p><strong>Expression:</strong> <span id="resultExpression">-</span></p>
+      <p><strong>Inputs:</strong> <span id="resultInputs">-</span></p>
+      <p><strong>Result:</strong> <span id="resultValue">-</span></p>
+    </section>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
